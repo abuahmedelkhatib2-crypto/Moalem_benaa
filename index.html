@@ -1,130 +1,194 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>معلم بناء في الخرج | لياسة وتشطيب فلل باحتراف</title>
+<title>معلم بناء ولياسة بالخرج | مقاولات عامة احترافية</title>
 
-<meta name="description" content="أفضل معلم بناء ولياسة في الخرج. تنفيذ عظم، ترميم، تشطيب فلل، صب قواعد وأعمدة. شغل احترافي وأسعار منافسة. اتصل الآن 0569024290">
-<meta name="keywords" content="معلم بناء في الخرج, لياسة الخرج, ترميم فلل الخرج, بناء عظم الخرج, مقاول في الخرج">
-<meta name="author" content="معلم بناء الخرج">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:Tahoma,Arial;
-background:#f4f6f9;
-color:#333;
-line-height:1.8;
-}
-header{
-background:linear-gradient(to left,#1e3c72,#2a5298);
-color:white;
-padding:40px 20px;
-text-align:center;
-}
-header h1{font-size:28px;margin-bottom:10px}
-header p{font-size:18px}
+    :root {
+        --primary-color: #f39c12; /* برتقالي إنشائي */
+        --secondary-color: #2c3e50; /* كحلي غامق */
+        --bg-color: #f8f9fa;
+        --text-color: #333;
+    }
 
-.container{padding:20px;max-width:1000px;margin:auto}
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Cairo', sans-serif; }
+    
+    body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
 
-.card{
-background:white;
-padding:20px;
-margin:15px 0;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
+    /* الهيدر */
+    header {
+        background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), 
+                    url('https://images.unsplash.com/photo-1541913054-21b36d8591cb?q=80&w=1000&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+        border-bottom: 5px solid var(--primary-color);
+    }
 
-.card h2{
-color:#2a5298;
-margin-bottom:15px;
-}
+    header h1 { font-size: 2.5rem; margin-bottom: 15px; color: var(--primary-color); }
+    header p { font-size: 1.2rem; max-width: 700px; margin: auto; }
 
-ul{list-style:none}
-ul li{
-padding:8px 0;
-border-bottom:1px solid #eee;
-}
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
 
-.cta{
-background:#28a745;
-color:white;
-padding:18px;
-text-align:center;
-border-radius:10px;
-font-size:20px;
-margin-top:20px;
-text-decoration:none;
-display:block;
-transition:0.3s;
-}
-.cta:hover{
-background:#218838;
-}
+    /* قسم معرض الصور (شغل حقيقي) */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+    }
 
-footer{
-background:#1e3c72;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:30px;
-font-size:14px;
-}
-.highlight{
-color:#28a745;
-font-weight:bold;
-}
+    .gallery-item {
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover { transform: translateY(-10px); }
+
+    .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .gallery-item .desc {
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        background: white;
+        color: var(--secondary-color);
+    }
+
+    /* البطاقات */
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        border-right: 5px solid var(--primary-color);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .card h2 { color: var(--secondary-color); margin-bottom: 15px; font-size: 1.5rem; }
+    .card ul li { margin-bottom: 10px; list-style: none; display: flex; align-items: center; }
+    .card ul li::before { content: "🏗️"; margin-left: 10px; }
+
+    /* أزرار التواصل */
+    .contact-buttons {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .btn {
+        flex: 1;
+        padding: 15px;
+        text-align: center;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-call { background-color: #2ecc71; }
+    .btn-whatsapp { background-color: #25D366; }
+
+    footer {
+        background: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 40px 20px 100px;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+        header h1 { font-size: 1.8rem; }
+    }
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>معلم بناء ولياسة في الخرج</h1>
-<p>تنفيذ عظم وتشطيب فلل – دقة – التزام – جودة عالية</p>
+    <h1>معلم بناء ولياسة في الخرج</h1>
+    <p>خبرة أكثر من 15 عاماً في بناء العظم، اللياسة، والترميم. نضمن لك الجودة والسرعة في التنفيذ.</p>
 </header>
 
 <div class="container">
+    
+    <h2 style="text-align:center; margin-bottom:30px; color:#2c3e50;">نماذج من أعمالنا</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?q=80&w=600&auto=format&fit=crop" alt="بناء عظم">
+            <div class="desc">تأسيس وبناء عظم احترافي</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=600&auto=format&fit=crop" alt="أعمال لياسة">
+            <div class="desc">لياسة داخلية وخارجية ناعمة</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=600&auto=format&fit=crop" alt="تشطيب">
+            <div class="desc">ترميم وتشطيب فلل وملاحق</div>
+        </div>
+    </div>
 
-<div class="card">
-<h2>خدمات البناء في الخرج</h2>
-<ul>
-<li>✔ بناء عظم كامل حسب المخططات</li>
-<li>✔ لياسة داخلية وخارجية باحتراف</li>
-<li>✔ ترميم وصيانة فلل قديمة</li>
-<li>✔ تشطيب ملاحق وأسوار</li>
-<li>✔ صب قواعد وأعمدة خرسانية</li>
-</ul>
+    <div class="services">
+        <div class="card">
+            <h2>الخدمات التي نقدمها</h2>
+            <ul>
+                <li>بناء فلل وقصور من التأسيس</li>
+                <li>لياسة واجهات بالقدّة والميزان</li>
+                <li>صب أسقف وأعمدة خرسانية</li>
+                <li>ترميم المنازل القديمة بالكامل</li>
+                <li>بناء ملاحق ومجالس خارجية</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>مميزات التعامل معنا</h2>
+            <ul>
+                <li>تحت إشراف هندسي دقيق</li>
+                <li>نخبة من العمالة الماهرة</li>
+                <li>دقة في تسليم المواعيد</li>
+                <li>أسعارنا هي الأفضل في الخرج</li>
+            </ul>
+        </div>
+    </div>
+
 </div>
 
-<div class="card">
-<h2>لماذا تختارنا؟</h2>
-<ul>
-<li>خبرة طويلة في مشاريع الخرج</li>
-<li>التزام كامل بالمواعيد</li>
-<li>استخدام مواد عالية الجودة</li>
-<li>أسعار منافسة ومناسبة</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>نخدم جميع أحياء الخرج</h2>
-<p>
-حي السلام – الخزامى – الريان – العزيزية – وجميع المناطق المجاورة.
-إذا كنت تبحث عن <span class="highlight">معلم بناء في الخرج</span> فنحن جاهزون لخدمتك.
-</p>
-</div>
-
-<a href="tel:0569024290" class="cta">
-📞 اتصل الآن 0569024290
-</a>
-
+<div class="contact-buttons">
+    <a href="tel:0569024290" class="btn btn-call">📞 اتصل الآن</a>
+    <a href="https://wa.me/966569024290" class="btn btn-whatsapp">💬 واتساب</a>
 </div>
 
 <footer>
-© 2026 معلم بناء في الخرج | جميع الحقوق محفوظة
+    <p>📍 نخدم كافة أحياء الخرج والمناطق المجاورة</p>
+    <p>© 2026 جميع الحقوق محفوظة لمعلم بناء الخرج</p>
 </footer>
 
 </body>
