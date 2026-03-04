@@ -2,584 +2,292 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    google-site-verification:googledda97ff4ed883646.html
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="googledda97ff4ed883646" />
+    <meta name="description" content="معلم بناء في الخرج - خدمات البناء واللياسة والترميم والأسوار بجودة عالية وأسعار تنافسية. خبرة طويلة في بناء الفلل والمباني السكنية. اتصل 0569024290">
+    <meta name="keywords" content="معلم بناء الخرج, بناء فلل, لياسة, ترميم, أسوار, مقاول بناء, خرج, السعودية">
+    <meta name="author" content="معلم بناء الخرج">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="معلم بناء بالخرج | بناء - لياسة - ترميم - أسوار">
+    <meta property="og:description" content="خدمات البناء واللياسة والترميم بأعلى معايير الجودة في الخرج والمناطق المحيطة">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://abuahmedelkhatib2-crypto.github.io/Moalem_benaa/">
+    
     <title>معلم بناء بالخرج | بناء - لياسة - ترميم - أسوار - فلل</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
-        :root {
-            --primary: #FF6B35;
-            --secondary: #004E89;
-            --accent: #F7C59F;
-            --dark: #1A1A2E;
-            --light: #F8F9FA;
-            --gradient: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
-        }
-
+        
         body {
-            font-family: 'Tajawal', sans-serif;
-            background: var(--light);
-            color: var(--dark);
-            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
         }
-
-        /* Header & Navigation */
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
         header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 1rem 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
+        
         nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
         }
-
+        
         .nav-links {
             display: flex;
-            gap: 2rem;
             list-style: none;
+            gap: 2rem;
         }
-
+        
         .nav-links a {
+            color: white;
             text-decoration: none;
-            color: var(--dark);
-            font-weight: 700;
             transition: color 0.3s;
-            position: relative;
         }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            right: 0;
-            width: 0;
-            height: 3px;
-            background: var(--primary);
-            transition: width 0.3s;
+        
+        .nav-links a:hover {
+            color: #f39c12;
         }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
+        
         /* Hero Section */
         .hero {
-            margin-top: 80px;
-            min-height: 90vh;
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
+            height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
             color: white;
-            position: relative;
-            overflow: hidden;
+            margin-top: 60px;
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
+        
+        .hero-content h1 {
+            font-size: 3rem;
             margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-
-        .hero h1 span {
-            color: var(--primary);
-            display: block;
-        }
-
-        .hero p {
+        
+        .hero-content p {
             font-size: 1.3rem;
             margin-bottom: 2rem;
-            line-height: 1.8;
         }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
+        
+        .cta-button {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 1rem 2rem;
             text-decoration: none;
-            font-weight: 700;
+            border-radius: 50px;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            border: none;
-            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
         }
-
-        .btn-primary {
-            background: var(--gradient);
-            color: white;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
-        }
-
-        .btn-primary:hover {
+        
+        .cta-button:hover {
+            background: #e67e22;
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
         }
-
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: var(--dark);
-        }
-
+        
         /* Services Section */
         .services {
-            padding: 5rem 2rem;
+            padding: 4rem 0;
             background: white;
         }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        
         .section-title {
             text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
             font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
+            margin-bottom: 3rem;
+            color: #2c3e50;
         }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: var(--gradient);
-            border-radius: 2px;
-        }
-
-        .section-title p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-
+        
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-
+        
         .service-card {
-            background: white;
-            border-radius: 20px;
+            background: #f8f9fa;
             padding: 2rem;
+            border-radius: 10px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            border: 1px solid #eee;
-            position: relative;
-            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #e0e0e0;
         }
-
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: var(--gradient);
-            transform: scaleX(0);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover::before {
-            transform: scaleX(1);
-        }
-
+        
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
-
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: var(--gradient);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 2rem;
-            color: white;
-        }
-
+        
         .service-card h3 {
-            font-size: 1.5rem;
+            color: #2c3e50;
             margin-bottom: 1rem;
-            color: var(--dark);
+            font-size: 1.5rem;
         }
-
-        .service-card p {
-            color: #666;
-            line-height: 1.6;
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
         }
-
-        /* Portfolio Section */
-        .portfolio {
-            padding: 5rem 2rem;
-            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 4rem 0;
+            background: #f4f4f4;
         }
-
-        .portfolio-grid {
+        
+        .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1.5rem;
         }
-
-        .portfolio-item {
+        
+        .gallery-item {
             position: relative;
-            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            cursor: pointer;
-            height: 300px;
+            border-radius: 10px;
+            height: 250px;
         }
-
-        .portfolio-item img {
+        
+        .gallery-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.3s;
         }
-
-        .portfolio-item:hover img {
+        
+        .gallery-item:hover img {
             transform: scale(1.1);
         }
-
-        .portfolio-overlay {
+        
+        .gallery-caption {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-            padding: 2rem;
+            background: rgba(0,0,0,0.7);
             color: white;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
+            padding: 1rem;
+            text-align: center;
         }
-
-        .portfolio-item:hover .portfolio-overlay {
-            transform: translateY(0);
-        }
-
-        .portfolio-overlay h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Why Choose Us */
+        
+        /* Why Us Section */
         .why-us {
-            padding: 5rem 2rem;
-            background: var(--dark);
-            color: white;
-            position: relative;
-            overflow: hidden;
+            padding: 4rem 0;
+            background: white;
         }
-
-        .why-us::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: var(--primary);
-            border-radius: 50%;
-            opacity: 0.1;
-            filter: blur(100px);
-        }
-
+        
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
-
-        .feature {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+        
+        .feature-item {
+            text-align: center;
             padding: 1.5rem;
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
         }
-
-        .feature i {
-            font-size: 2rem;
-            color: var(--primary);
-            flex-shrink: 0;
-        }
-
-        .feature h3 {
+        
+        .feature-item h3 {
+            color: #3498db;
             margin-bottom: 0.5rem;
-            font-size: 1.2rem;
         }
-
-        .feature p {
-            color: #aaa;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-
+        
         /* Contact Section */
         .contact {
-            padding: 5rem 2rem;
-            background: white;
-        }
-
-        .contact-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .contact-info h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-            padding: 1rem;
-            background: #f8f9fa;
-            border-radius: 10px;
-            transition: all 0.3s;
-        }
-
-        .contact-item:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateX(-10px);
-        }
-
-        .contact-item i {
-            font-size: 1.5rem;
-            color: var(--primary);
-            width: 50px;
-            height: 50px;
-            background: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .contact-item:hover i {
-            color: var(--primary);
-        }
-
-        .phone-number {
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--primary);
-            direction: ltr;
-            display: block;
-            margin-top: 1rem;
-        }
-
-        .contact-form {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            color: var(--dark);
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 1rem;
-            border: 2px solid #eee;
-            border-radius: 10px;
-            font-family: 'Tajawal', sans-serif;
-            transition: border-color 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-
-        /* Floating Call Button */
-        .floating-call {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            width: 60px;
-            height: 60px;
-            background: #25D366;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            cursor: pointer;
-            z-index: 999;
-            animation: pulse 2s infinite;
-            text-decoration: none;
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-        }
-
-        /* Footer */
-        footer {
-            background: var(--dark);
+            padding: 4rem 0;
+            background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
         }
-
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        
+        .contact h2 {
+            margin-bottom: 2rem;
         }
-
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
         }
-
-        .scroll-reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+        
+        .contact-item {
+            font-size: 1.2rem;
         }
-
-        /* Responsive */
+        
+        .phone-button {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .phone-button:hover {
+            background: #229954;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        
+        /* Mobile Responsive */
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
             
-            .mobile-menu {
-                display: block;
-            }
-            
-            .hero h1 {
+            .hero-content h1 {
                 font-size: 2rem;
             }
             
-            .contact-content {
-                grid-template-columns: 1fr;
-                gap: 2rem;
+            .hero-content p {
+                font-size: 1rem;
             }
             
-            .phone-number {
-                font-size: 1.5rem;
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -587,90 +295,69 @@
 <body>
 
     <!-- Header -->
-    <header id="header">
-        <nav>
-            <div class="logo">
-                <i class="fas fa-hard-hat"></i>
-                <span>معلم بناء بالخرج</span>
-            </div>
+    <header>
+        <nav class="container">
+            <div class="logo">معلم بناء الخرج</div>
             <ul class="nav-links">
                 <li><a href="#home">الرئيسية</a></li>
                 <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#gallery">أعمالنا</a></li>
                 <li><a href="#why-us">لماذا نحن</a></li>
                 <li><a href="#contact">تواصل معنا</a></li>
             </ul>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>بناء بجودة عالية <span>وإتقان يد سعودية</span></h1>
-            <p>نقدم لكم خدمات البناء واللياسة والترميم بأعلى معايير الجودة في الخرج والمناطق المحيطة. خبرة طويلة في بناء الفلل والأسوار والمباني السكنية.</p>
-            <div class="cta-buttons">
-                <a href="tel:0569024290" class="btn btn-primary">
-                    <i class="fas fa-phone"></i>
-                    اتصل الآن
-                </a>
-                <a href="https://wa.me/966569024290" class="btn btn-secondary">
-                    <i class="fab fa-whatsapp"></i>
-                    واتساب
-                </a>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>بناء بجودة عالية وإتقان يد سعودية</h1>
+                <p>نقدم لكم خدمات البناء واللياسة والترميم بأعلى معايير الجودة في الخرج والمناطق المحيطة. خبرة طويلة في بناء الفلل والأسوار والمباني السكنية.</p>
+                <a href="tel:0569024290" class="cta-button">اتصل بنا الآن</a>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section id="services" class="services">
         <div class="container">
-            <div class="section-title scroll-reveal">
-                <h2>خدماتنا المميزة</h2>
-                <p>نقدم مجموعة شاملة من خدمات البناء والتشطيب بأعلى جودة</p>
-            </div>
+            <h2 class="section-title">خدماتنا المميزة</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">نقدم مجموعة شاملة من خدمات البناء والتشطيب بأعلى جودة</p>
+            
             <div class="services-grid">
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-building"></i>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
                     <h3>أعمال البناء</h3>
                     <p>بناء الفلل والمنازل والمباني السكنية والتجارية بأحدث الطرق والمواد عالية الجودة</p>
                 </div>
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-trowel"></i>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🧱</div>
                     <h3>أعمال اللياسة</h3>
                     <p>تنفيذ أعمال اللياسة الداخلية والخارجية بإتقان ودقة عالية مع ضمان جودة التشطيب</p>
                 </div>
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔨</div>
                     <h3>الترميمات</h3>
                     <p>ترميم المباني القديمة، إصلاح التشققات، تجديد الواجهات، وإعادة الحياة للمباني</p>
                 </div>
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-border-all"></i>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🚧</div>
                     <h3>الأسوار والمزارع</h3>
                     <p>بناء أسوار الفلل والمزارع والأراضي بمختلف الأرتفاعات والتصاميم</p>
                 </div>
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
                     <h3>تشطيب الفلل</h3>
                     <p>أعمال التشطيب النهائية للفلل والقصور تشمل السيراميك والدهانات والديكورات</p>
                 </div>
-                <div class="service-card scroll-reveal">
-                    <div class="service-icon">
-                        <i class="fas fa-hammer"></i>
-                    </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">➕</div>
                     <h3>الإضافات والتعديلات</h3>
                     <p>إضافة غرف، توسيعات، بناء ملاحق، وكافة أعمال التعديل على المباني القائمة</p>
                 </div>
@@ -678,241 +365,139 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
         <div class="container">
-            <div class="section-title scroll-reveal">
-                <h2>معرض أعمالنا</h2>
-                <p>نماذج من أعمالنا السابقة في البناء والترميم</p>
-            </div>
-            <div class="portfolio-grid">
-                <!-- User Images -->
-                <div class="portfolio-item scroll-reveal">
-                    <img src="/mnt/kimi/upload/FB_IMG_1772140223280.jpg" alt="بناء جدار كتل خرسانية">
-                    <div class="portfolio-overlay">
-                        <h3>بناء جدار كتل خرسانية</h3>
-                        <p>أعمال البناء بالكتل الخرسانية مع فتحات التهوية</p>
-                    </div>
-                </div>
-                <div class="portfolio-item scroll-reveal">
-                    <img src="/mnt/kimi/upload/FB_IMG_1772140183553.jpg" alt="أعمال اللياسة الداخلية">
-                    <div class="portfolio-overlay">
-                        <h3>أعمال اللياسة الداخلية</h3>
-                        <p>تشطيب جدران داخلية بإتقان عالي</p>
-                    </div>
-                </div>
-                <div class="portfolio-item scroll-reveal">
-                    <img src="/mnt/kimi/upload/FB_IMG_1771219766800.jpg" alt="بناء دور علوي">
-                    <div class="portfolio-overlay">
-                        <h3>بناء دور علوي</h3>
-                        <p>إنشاء طابق إضافي مع أعمدة خرسانية</p>
-                    </div>
+            <h2 class="section-title">معرض أعمالنا</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">نماذج من أعمالنا السابقة في البناء والترميم</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="بناء جدار كتل خرسانية">
+                    <div class="gallery-caption">بناء جدار كتل خرسانية</div>
                 </div>
                 
-                <!-- Additional Professional Images -->
-                <div class="portfolio-item scroll-reveal">
-                    <img src="https://kimi-web-img.moonshot.cn/img/storage.balipremiumvilla.com/e7c277881a26506a3e1bc8d244910f4b022eb087.webp" alt="بناء فيلا فاخرة">
-                    <div class="portfolio-overlay">
-                        <h3>بناء فيلا فاخرة</h3>
-                        <p>إشراف هندسي دقيق على أعمال البناء</p>
-                    </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="أعمال اللياسة الداخلية">
+                    <div class="gallery-caption">أعمال اللياسة الداخلية</div>
                 </div>
-                <div class="portfolio-item scroll-reveal">
-                    <img src="https://kimi-web-img.moonshot.cn/img/www.ultratechcement.com/edf1bcdf03b6ab65b80ff0b4cb0520933e425662.jpeg" alt="أعمال اللياسة الاحترافية">
-                    <div class="portfolio-overlay">
-                        <h3>أعمال اللياسة الاحترافية</h3>
-                        <p>تطبيق اللياسة بأحدث التقنيات</p>
-                    </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1590274853856-f22d5ee3d378?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="بناء دور علوي">
+                    <div class="gallery-caption">بناء دور علوي</div>
                 </div>
-                <div class="portfolio-item scroll-reveal">
-                    <img src="https://kimi-web-img.moonshot.cn/img/www.stoneartbyskl.com/ef4908e3acc4bb3a3d88ad29ebce5641e34fac81.webp" alt="تصميم سور حديث">
-                    <div class="portfolio-overlay">
-                        <h3>تصميم سور حديث</h3>
-                        <p>أسوار مزخرفة بإضاءة جمالية</p>
-                    </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="بناء فيلا فاخرة">
+                    <div class="gallery-caption">بناء فيلا فاخرة</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="أعمال اللياسة الاحترافية">
+                    <div class="gallery-caption">أعمال اللياسة الاحترافية</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="تصميم سور حديث">
+                    <div class="gallery-caption">تصميم سور حديث</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="why-us" id="why-us">
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us">
         <div class="container">
-            <div class="section-title scroll-reveal">
-                <h2 style="color: white;">لماذا تختارنا؟</h2>
-                <p style="color: #aaa;">نميز ourselves بالجودة والمصداقية في العمل</p>
-            </div>
+            <h2 class="section-title">لماذا تختارنا؟</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">نميز أنفسنا بالجودة والمصداقية في العمل</p>
+            
             <div class="features-grid">
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-medal"></i>
-                    <div>
-                        <h3>جودة عالية</h3>
-                        <p>نستخدم أفضل المواد ونلتزم بأعلى معايير الجودة في كل مرحلة من مراحل البناء</p>
-                    </div>
+                <div class="feature-item">
+                    <h3>✅ جودة عالية</h3>
+                    <p>نستخدم أفضل المواد ونلتزم بأعلى معايير الجودة في كل مرحلة من مراحل البناء</p>
                 </div>
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-clock"></i>
-                    <div>
-                        <h3>الالتزام بالمواعيد</h3>
-                        <p>نلتزم بتسليم المشاريع في الوقت المحدد دون تأخير مع ضمان الجودة</p>
-                    </div>
+                
+                <div class="feature-item">
+                    <h3>⏰ الالتزام بالمواعيد</h3>
+                    <p>نلتزم بتسليم المشاريع في الوقت المحدد دون تأخير مع ضمان الجودة</p>
                 </div>
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-hand-holding-usd"></i>
-                    <div>
-                        <h3>أسعار تنافسية</h3>
-                        <p>نقدم أفضل الأسعار في الخرج مع الحفاظ على جودة العمل ومواد البناء</p>
-                    </div>
+                
+                <div class="feature-item">
+                    <h3>💰 أسعار تنافسية</h3>
+                    <p>نقدم أفضل الأسعار في الخرج مع الحفاظ على جودة العمل ومواد البناء</p>
                 </div>
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-user-tie"></i>
-                    <div>
-                        <h3>خبرة طويلة</h3>
-                        <p>سنوات من الخبرة في مجال البناء والتشطيبات في منطقة الخرج</p>
-                    </div>
+                
+                <div class="feature-item">
+                    <h3>👷 خبرة طويلة</h3>
+                    <p>سنوات من الخبرة في مجال البناء والتشطيبات في منطقة الخرج</p>
                 </div>
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-shield-alt"></i>
-                    <div>
-                        <h3>ضمان على العمل</h3>
-                        <p>نقدم ضمان على جميع أعمالنا لضمان رضا العملاء وثقتهم بنا</p>
-                    </div>
+                
+                <div class="feature-item">
+                    <h3>🛡️ ضمان على العمل</h3>
+                    <p>نقدم ضمان على جميع أعمالنا لضمان رضا العملاء وثقتهم بنا</p>
                 </div>
-                <div class="feature scroll-reveal">
-                    <i class="fas fa-headset"></i>
-                    <div>
-                        <h3>متابعة مستمرة</h3>
-                        <p>تواصل دائم مع العميل لإطلاعه على سير العمل والتطورات اليومية</p>
-                    </div>
+                
+                <div class="feature-item">
+                    <h3>📞 متابعة مستمرة</h3>
+                    <p>تواصل دائم مع العميل لإطلاعه على سير العمل والتطورات اليومية</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-title scroll-reveal">
-                <h2>تواصل معنا</h2>
-                <p>نحن جاهزون لخدمتك في أي وقت</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info scroll-reveal">
-                    <h3>اطلب عرض سعر مجاني الآن</h3>
-                    <p style="margin-bottom: 2rem; color: #666;">لا تتردد في التواصل معنا لأي استفسار أو طلب عرض سعر لمشروعك. نحن نغطي الخرج والأحساء والمناطق المحيطة.</p>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>اتصل بنا مباشرة</strong>
-                            <span class="phone-number">056 902 4290</span>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fab fa-whatsapp"></i>
-                        <div>
-                            <strong>واتساب</strong>
-                            <span>056 902 4290</span>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>الموقع</strong>
-                            <span>الخرج - المملكة العربية السعودية</span>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <strong>ساعات العمل</strong>
-                            <span>طوال أيام الأسبوع - من 7 صباحاً حتى 10 مساءً</span>
-                        </div>
-                    </div>
+            <h2 class="section-title" style="color: white;">تواصل معنا</h2>
+            <p style="margin-bottom: 2rem; font-size: 1.2rem;">نحن جاهزون لخدمتك في أي وقت</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📍 الموقع</strong><br>
+                    الخرج - المملكة العربية السعودية
                 </div>
-                
-                <div class="contact-form scroll-reveal">
-                    <form onsubmit="event.preventDefault(); alert('شكراً لتواصلك! سنتصل بك قريباً');">
-                        <div class="form-group">
-                            <label>الاسم الكامل</label>
-                            <input type="text" placeholder="أدخل اسمك" required>
-                        </div>
-                        <div class="form-group">
-                            <label>رقم الجوال</label>
-                            <input type="tel" placeholder="05xxxxxxxx" required>
-                        </div>
-                        <div class="form-group">
-                            <label>نوع الخدمة المطلوبة</label>
-                            <input type="text" placeholder="مثال: بناء فيلا، ترميم، لياسة...">
-                        </div>
-                        <div class="form-group">
-                            <label>تفاصيل المشروع</label>
-                            <textarea rows="4" placeholder="اكتب تفاصيل مشروعك هنا..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                            <i class="fas fa-paper-plane"></i>
-                            إرسال الطلب
-                        </button>
-                    </form>
+                <div class="contact-item">
+                    <strong>🕐 ساعات العمل</strong><br>
+                    طوال أيام الأسبوع - 7 ص إلى 10 م
                 </div>
             </div>
+            
+            <h3 style="margin-bottom: 1rem;">اطلب عرض سعر مجاني الآن</h3>
+            <a href="tel:0569024290" class="phone-button">📞 056 902 4290</a>
+            <br><br>
+            <a href="https://wa.me/966569024290" style="color: #25d366; font-size: 1.2rem; text-decoration: none;">💬 تواصل عبر واتساب</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 معلم بناء بالخرج. جميع الحقوق محفوظة.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #aaa;">بناء بجودة - إتقان - مصداقية</p>
+        <div class="container">
+            <p>&copy; 2025 معلم بناء الخرج - جميع الحقوق محفوظة</p>
+        </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/966569024290" class="floating-call" title="تواصل عبر واتساب">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script>
-        // Scroll Animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
-
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
-            }
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "معلم بناء الخرج",
+        "description": "خدمات البناء واللياسة والترميم في الخرج",
+        "url": "https://abuahmedelkhatib2-crypto.github.io/Moalem_benaa/",
+        "telephone": "+966569024290",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "الخرج",
+            "addressCountry": "SA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 24.1556,
+            "longitude": 47.3340
+        },
+        "openingHours": "Mo-Su 07:00-22:00",
+        "priceRange": "$$"
+    }
     </script>
 
 </body>
