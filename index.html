@@ -142,14 +142,5 @@ const observer=new IntersectionObserver((entries)=>{{entries.forEach(entry=>{{if
 document.querySelectorAll('.scroll-reveal').forEach(el=>observer.observe(el));
 </script>
 </body>
-</html>'''
+</html>
 
-# Save
-with open('/mnt/kimi/output/index.html','w',encoding='utf-8') as f:
-    f.write(html)
-
-size=os.path.getsize('/mnt/kimi/output/index.html')/1024
-print(f"✅ تم حفظ الملف!")
-print(f"📊 الحجم: {size:.1f} KB")
-print(f"\n📥 [تحميل الملف](sandbox:///mnt/kimi/output/index.html)")
-print(f"\n🚀 ارفع الملف على GitHub وهيشتغل على طول!")
